@@ -26,7 +26,7 @@ document.onkeyup = function (event) {
 }
 
 function Update_HTML() {
-    var updatehtml = "<p>Wins: " + wins + "</p>" + "<p>Losses: " + losses + "</p>" + "<p>Guesses Left: " + score_guessesLeft + "<p>Your Guesses so far: " +
+    var updatehtml = "<p>Guess What Letter I'm Thinking Of</p>" + "<p>Wins: " + wins + "</p>" + "<p>Losses: " + losses + "</p>" + "<p>Guesses Left: " + score_guessesLeft + "<p>Your Guesses so far: " +
         score_guessesSoFar + "</p>";
     document.querySelector("#psychic_game").innerHTML = updatehtml;
 }
