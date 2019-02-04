@@ -24,12 +24,11 @@ document.onkeyup = function (event) {
     //Write to the HTML file.
     Update_HTML();
 }
+    var updatehtml1 = "<p>Wins: " + wins + "</p>" + "<p>Losses: " + losses + "</p>" + "<p>Guesses Left: " + score_guessesLeft + "<p>Guesses so far: " + score_guessesSoFar + "</p>";
 
 function Update_HTML() { 
-    var updatehtml1 = "<p>Wins: " + wins + "</p>" + "<p>Losses: " + losses + "</p>" + "<p>Guesses Left: " + score_guessesLeft + "<p>Your Guesses so far: " + score_guessesSoFar + "</p>";
     document.querySelector("#psychic_game").innerHTML = updatehtml1;
 }
-
 function newLetter() {
     //math for generating random selection.
     return computerChoices[Math.floor(Math.random() * computerChoices.length)];
