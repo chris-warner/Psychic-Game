@@ -1,0 +1,5 @@
+{
+    "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+    "javascript.suggest.completeFunctionCalls": true,
+    "scss.lint.important": "error"
+}
