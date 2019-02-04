@@ -25,10 +25,9 @@ document.onkeyup = function (event) {
     Update_HTML();
 }
 
-function Update_HTML() {
-    var updatehtml = "<p>Wins: " + wins + "</p>" + "<p>Losses: " + losses + "</p>" + "<p>Guesses Left: " + score_guessesLeft + "<p>Your Guesses so far: " +
-        score_guessesSoFar + "</p>";
-    document.querySelector("#psychic_game").innerHTML = updatehtml;
+function Update_HTML() { 
+    var updatehtml1 = "<p>Wins: " + wins + "</p>" + "<p>Losses: " + losses + "</p>" + "<p>Guesses Left: " + score_guessesLeft + "<p>Your Guesses so far: " + score_guessesSoFar + "</p>";
+    document.querySelector("#psychic_game").innerHTML = updatehtml1;
 }
 
 function newLetter() {
