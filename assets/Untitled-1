@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Rock Paper Scissors Part 2
+  </title>
+</head>
+
+<body>
+
+  <div id="game">
+
+  </div>
+
+  <script type="text/javascript">
+
+    // Creates an array that lists out all of the options (Rock, Paper, or Scissors).
+    var computerChoices = ["r", "p", "s"];
+    var userWins = 0;
+    var computerWins = 0;
+    var ties = 0;
+    //var outcome;
+    // This function is run whenever the user presses a key.
+    document.onkeyup = function(event) {
+
+      // Determines which key was pressed.
+      var userGuess = event.key;
+
+      // Randomly chooses a choice from the options array. This is the Computer's guess.
+      var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+
+      // Alerts the key the user pressed (userGuess).
+      alert("User guess: " + userGuess);
+
+      // Alerts the Computer's guess.
+      alert("Computer guess: " + computerGuess);
+
+       if (userGuess === "r" && computerGuess === "s")
+      { 
+      userWins++;
+      alert("Congratulations, user wins. Player Score: " + userWins + " Computer score: " + computerWins); 
+      }
+
+      else if (userGuess === "s" && computerGuess === "p")
+      {
+      userWins++;
+      alert("Congratulations, user wins. Player Score: " + userWins + " Computer score: " + computerWins); 
+      }
+
+      else if (userGuess === "p" && computerGuess === "r")
+      {
+      userWins++;
+      alert("Congratulations, user wins. Player Score: " + userWins + " Computer score: " + computerWins); 
+      }
+
+      // If computer wins.
+
+      else if (userGuess === "r" && computerGuess === "p")
+      {
+      computerWins++;
+      alert("Congratulations, sorry you suck. Player Score: " + userWins + " Computer score: " + computerWins); 
+      }
+
+      else if (userGuess === "s" && computerGuess === "r")
+      {
+      computerWins++;
+      alert("Congratulations, sorry you suck. Player Score: " + userWins + " Computer score: " + computerWins); 
+      }
+
+      else if (userGuess === "p" && computerGuess === "s")
+      {
+      computerWins++;
+      alert("Congratulations, sorry you suck. Player Score: " + userWins + " Computer score: " + computerWins); 
+      }
+
+      else if (userGuess === computerGuess)
+      {
+      computerWins++;
+      userWins++;
+      alert("Tie. Player Score: " + userWins + " Computer score: " + computerWins); 
+      }
+      
+    };
+  </script>
+
+</body>
+
+</html>
