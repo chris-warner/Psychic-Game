@@ -26,3 +26,23 @@ html[xmlns] .clearfix {
 .clearfix {
     display: block
 }
+
+body
+{
+background-color: white;
+margin: 25px;
+}
+
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;   
+    text-align: center;
+    margin-top: 80;
+    padding-top: 20px;
+    border: black;
+    border-width: 2px;  
+    background-color: azure;
+    height: auto;
+    text-anchor: middle;
+    text-align: middle;
+}
